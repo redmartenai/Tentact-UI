@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Terms &amp; Conditions — The Tentact</title>
+<meta name="description" content="The terms that apply when you use The Tentact — written in plain language." />
+<link rel="icon" type="image/svg+xml" href="assets/logo/tentact-block-mark.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/tentact-block-32.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#f1efea; --paper:#faf9f6; --ink:#0e0e0f; --ink-2:#3a3a3e; --muted:#6f6f75; --line:rgba(14,14,15,.1);
+  --red:#ff4a1c; --yellow:#fff07a; --mint:#d6f2e2; --ok:#059669;
+  --sans:"Geist",ui-sans-serif,system-ui,-apple-system,sans-serif;
+  --serif:"Instrument Serif",Georgia,serif; --mono:"Geist Mono",ui-monospace,Menlo,monospace;
+  --gut:24px; --ease:cubic-bezier(.2,.7,.2,1);
+}
+@media (max-width:640px){:root{--gut:16px}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+em{font-family:var(--serif);font-style:italic;font-weight:400}
+.micro{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--red);z-index:90}
+
+/* nav */
+.nav{position:fixed;top:14px;left:var(--gut);right:var(--gut);z-index:80;display:flex;justify-content:space-between;align-items:center;pointer-events:none}
+.nav>*{pointer-events:auto}
+.brand{display:flex;align-items:center;gap:10px;height:46px;padding:0 16px 0 8px;border-radius:12px;background:var(--ink);color:#fff;text-decoration:none;font-weight:600;letter-spacing:-.035em;font-size:17px;box-shadow:0 14px 30px -16px rgba(0,0,0,.5)}
+.brand img{width:36px;height:36px;margin:-4px 0;filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.brand em{font-size:1.12em}
+.nav-r{display:flex;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 20px;border-radius:12px;font-size:14px;font-weight:500;text-decoration:none;white-space:nowrap;transition:transform .3s var(--ease),background .25s}
+.btn:active{transform:scale(.97)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 30px -12px rgba(255,74,28,.7)}
+.btn-line{background:rgba(255,255,255,.7);border:1px solid var(--line);backdrop-filter:blur(8px)}
+@media (max-width:520px){.nav-r .btn-line{display:none}}
+
+/* header */
+header.top{padding:130px var(--gut) 48px;max-width:1200px;margin:0 auto}
+.crumb{color:var(--muted)}
+.crumb a{text-decoration:none}
+.crumb a:hover{color:var(--red)}
+h1{font-size:clamp(46px,7vw,104px);line-height:.92;letter-spacing:-.055em;font-weight:600;margin-top:18px}
+h1 em{letter-spacing:-.02em}
+.intro{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;margin-top:34px;align-items:end}
+@media (max-width:860px){.intro{grid-template-columns:1fr;gap:24px}}
+.intro p{font-size:clamp(17px,1.5vw,20px);color:var(--ink-2);max-width:600px}
+.meta{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+@media (max-width:860px){.meta{justify-content:flex-start}}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:13px}
+.chip b{font-weight:600}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--ok)}
+
+/* summary cards */
+.glance{max-width:1200px;margin:0 auto;padding:0 var(--gut) 60px}
+.glance h2{font-size:15px;font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media (max-width:960px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.cards{grid-template-columns:1fr}}
+.card{border-radius:20px;padding:22px;min-height:170px;display:flex;flex-direction:column;justify-content:space-between}
+.card .ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,.65);font-size:17px}
+.card h3{font-size:17px;letter-spacing:-.02em;font-weight:600;margin-top:18px;line-height:1.25}
+.card p{font-size:14px;color:var(--ink-2);margin-top:6px;line-height:1.45}
+
+/* layout */
+.wrap{max-width:1200px;margin:0 auto;padding:0 var(--gut) 100px;display:grid;grid-template-columns:270px 1fr;gap:64px;align-items:start}
+@media (max-width:960px){.wrap{grid-template-columns:1fr;gap:20px}}
+aside{position:sticky;top:96px}
+@media (max-width:960px){aside{position:relative;top:0}}
+.toc{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px 10px 12px}
+.toc .micro{color:var(--muted);padding:0 10px 10px;display:block}
+.toc ol{list-style:none;counter-reset:t;max-height:calc(100vh - 230px);overflow:auto}
+@media (max-width:960px){.toc ol{max-height:none;columns:2;column-gap:4px}}
+@media (max-width:520px){.toc ol{columns:1}}
+.toc li{counter-increment:t;break-inside:avoid}
+.toc a{display:flex;gap:10px;padding:7px 10px;border-radius:10px;text-decoration:none;font-size:14px;color:var(--ink-2);line-height:1.35;transition:background .2s,color .2s}
+.toc a::before{content:counter(t,decimal-leading-zero);font-family:var(--mono);font-size:11px;color:var(--muted);padding-top:2px;flex:none}
+.toc a:hover{background:var(--bg)}
+.toc a.on{background:var(--ink);color:#fff}
+.toc a.on::before{color:#ff8a66}
+.help{margin-top:12px;background:var(--ink);color:#fff;border-radius:20px;padding:20px}
+.help p{font-size:14px;color:#c9c9cf;margin-top:6px}
+.help a{display:inline-block;margin-top:12px;color:#ff8a66;text-decoration:none;font-weight:500}
+
+/* sections */
+article section{padding:34px 0;border-top:1px solid var(--line)}
+article section:first-child{border-top:0;padding-top:0}
+.num{font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:.06em}
+article h2{font-size:clamp(26px,2.6vw,36px);letter-spacing:-.04em;line-height:1.1;font-weight:600;margin:8px 0 16px}
+.short{display:flex;gap:12px;align-items:flex-start;background:var(--yellow);border-radius:14px;padding:14px 16px;margin-bottom:18px;font-size:15px;line-height:1.5}
+.short b{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;flex:none;padding-top:3px}
+article p{color:var(--ink-2);margin-top:12px;max-width:720px}
+article ul{margin:12px 0 0;padding:0;list-style:none;max-width:720px;display:grid;gap:9px}
+article li{position:relative;padding-left:26px;color:var(--ink-2)}
+article li::before{content:"";position:absolute;left:4px;top:.62em;width:9px;height:9px;border-radius:3px;background:var(--red);transform:rotate(45deg)}
+ul.no li::before{background:none;content:"✕";transform:none;top:0;left:2px;color:var(--red);font-size:13px;font-weight:700;width:auto;height:auto}
+ul.yes li::before{background:none;content:"✓";transform:none;top:0;left:2px;color:var(--ok);font-size:14px;font-weight:700;width:auto;height:auto}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;max-width:760px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+.box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.box h4{font-size:14px;font-weight:600}
+.box ul{margin-top:8px}
+.price{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;max-width:720px}
+@media (max-width:640px){.price{grid-template-columns:1fr}}
+.price div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.price small{display:block;color:var(--muted);font-size:12px}
+.price b{font-size:24px;letter-spacing:-.04em}
+.price .hl{background:var(--ink);color:#fff;border-color:var(--ink)}
+.price .hl small{color:#a9a9b0}
+.price .hl b{color:#ff8a66}
+.note{margin-top:16px;max-width:720px;font-size:14px;color:var(--muted);border-left:3px solid var(--red);padding-left:14px}
+.contact-card{margin-top:18px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;max-width:720px}
+.contact-card .big{font-size:22px;font-weight:600;letter-spacing:-.03em;text-decoration:none}
+.contact-card .big:hover{color:var(--red)}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:40px var(--gut);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+footer a{text-decoration:none;color:var(--ink-2)}
+footer a:hover{color:var(--red)}
+footer .links{display:flex;gap:22px;flex-wrap:wrap}
+.top-btn{position:fixed;right:var(--gut);bottom:24px;z-index:70;width:46px;height:46px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;text-decoration:none;opacity:0;transform:translateY(10px);transition:opacity .3s,transform .3s;box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+.top-btn.on{opacity:1;transform:none}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media print{.nav,.progress,aside,.top-btn,.glance{display:none}.wrap{display:block}header.top{padding-top:20px}.rv{opacity:1;transform:none}.short{border:1px solid #ccc;background:#fff}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav">
+  <a class="brand" href="index.html"><img src="assets/logo/tentact-block-mark.svg" alt="" /><span>The <em>Tentact</em></span></a>
+  <div class="nav-r">
+    <a class="btn btn-line" href="index.html">← Back to site</a>
+    <a class="btn btn-red" href="mailto:sales@redmarten.com">Contact us</a>
+  </div>
+</header>
+
+<header class="top">
+  <div class="crumb micro"><a href="index.html">The Tentact</a> &nbsp;/&nbsp; Legal &nbsp;/&nbsp; Terms</div>
+  <h1>Terms &amp; <em>Conditions.</em></h1>
+  <div class="intro">
+    <p>These are the rules for using The Tentact. We've written them in plain language and put a short summary at the top of every section — but the full text is what counts.</p>
+    <div class="meta">
+      <span class="chip"><i></i>Last updated <b>18 October 2026</b></span>
+      <span class="chip">≈ 10 min read</span>
+    </div>
+  </div>
+</header>
+
+<section class="glance">
+  <h2>The key points, at a glance</h2>
+  <div class="cards">
+    <div class="card rv" style="background:var(--mint)"><span class="ic">✓</span><div><h3>Verified, ICP-based data</h3><p>We supply B2B contact data matched to your ideal customer profile and check it before delivery.</p></div></div>
+    <div class="card rv" style="background:var(--yellow)"><span class="ic">⚖</span><div><h3>Use it lawfully</h3><p>You're responsible for following privacy, anti-spam and marketing laws when you contact people.</p></div></div>
+    <div class="card rv" style="background:#ffe0cf"><span class="ic">$</span><div><h3>Clear pricing</h3><p>One plan. Base price $4,000; festive offer $3,500; 10% off when you apply.</p></div></div>
+    <div class="card rv" style="background:#e7ddfb"><span class="ic">✉</span><div><h3>Real people to talk to</h3><p>Questions about these terms? Write to sales@redmarten.com.</p></div></div>
+  </div>
+</section>
+
+<div class="wrap">
+  <aside>
+    <nav class="toc" aria-label="Contents">
+      <span class="micro">Contents</span>
+      <ol id="toc"></ol>
+    </nav>
+    <div class="help"><b>Need a hand?</b><p>If anything here is unclear, ask us before you sign up — we're happy to explain.</p><a href="mailto:sales@redmarten.com">sales@redmarten.com →</a></div>
+  </aside>
+
+  <article id="terms">
+
+    <section id="about"><div class="num">01</div><h2>About these terms</h2>
+      <div class="short"><b>In short</b><span>By using The Tentact you agree to these terms. If you're signing up for a company, you're agreeing on its behalf.</span></div>
+      <p>These Terms &amp; Conditions ("Terms") are an agreement between you and The Tentact ("we", "us", "our"), the operator of the website and service known as The Tentact (the "Service").</p>
+      <p>By creating an account, placing an order or otherwise using the Service, you confirm that you have read and accept these Terms. If you use the Service on behalf of a business, you confirm that you are authorised to accept these Terms for that business, and "you" means that business.</p>
+      <p>If you do not agree with these Terms, please do not use the Service.</p>
+    </section>
+
+    <section id="service"><div class="num">02</div><h2>What we provide</h2>
+      <div class="short"><b>In short</b><span>Verified B2B contact data from a database of 420+ million data records, filtered to the ideal customer profile you describe.</span></div>
+      <p>The Tentact provides business-to-business ("B2B") contact and company data to help sales and marketing teams find potential customers. This includes:</p>
+      <ul>
+        <li>Access to a database of more than 420 million business data records;</li>
+        <li>Lists built on your ideal customer profile ("ICP") — for example by role, industry, company size, location or buying signals;</li>
+        <li>Contact details such as work email addresses and phone numbers, which we verify before delivery;</li>
+        <li>Company information and signals such as job changes, hiring activity and technology used;</li>
+        <li>Export of your data to CSV or to your CRM.</li>
+      </ul>
+      <p>We may improve, change or add features over time. If we remove a feature that is central to what you paid for, we'll tell you in advance.</p>
+    </section>
+
+    <section id="account"><div class="num">03</div><h2>Your account</h2>
+      <div class="short"><b>In short</b><span>Give us accurate details, keep your login safe, and don't share your account.</span></div>
+      <ul>
+        <li>You must be at least 18 years old and using the Service for business purposes.</li>
+        <li>The information you give us when signing up must be accurate and kept up to date.</li>
+        <li>You are responsible for keeping your login details secure and for all activity under your account.</li>
+        <li>Accounts are for the individuals or team members named on your plan and may not be shared or resold.</li>
+        <li>Tell us straight away at sales@redmarten.com if you suspect unauthorised access.</li>
+      </ul>
+    </section>
+
+    <section id="pricing"><div class="num">04</div><h2>Pricing &amp; payment</h2>
+      <div class="short"><b>In short</b><span>One plan with clear pricing. Festive and application discounts are applied as shown below.</span></div>
+      <div class="price">
+        <div><small>Base price</small><b>$4,000</b></div>
+        <div><small>Dasara · Diwali offer</small><b>$3,500</b></div>
+        <div class="hl"><small>With 10% application discount</small><b>$3,150</b></div>
+      </div>
+      <ul style="margin-top:18px">
+        <li>Prices are in US dollars and exclude applicable taxes (such as GST or VAT), which will be added to your invoice where required.</li>
+        <li>The Dasara · Diwali offer is available for a limited period during the festive season. We'll confirm the exact end date in your quote.</li>
+        <li>The 10% application discount applies to the offer price when you apply through our sales team, and is applied once per customer.</li>
+        <li>Offers and discounts can't be exchanged for cash and can't be combined with other promotions unless we say so in writing.</li>
+        <li>Payment is due as set out in your invoice or order form. If a payment is late, we may pause access until it's received.</li>
+      </ul>
+      <p class="note">The billing period for each plan (for example one-time, monthly or annual) and anything else specific to your purchase will be confirmed in your order form or invoice. If that document differs from these Terms, the order form wins.</p>
+    </section>
+
+    <section id="use"><div class="num">05</div><h2>How you may use the data</h2>
+      <div class="short"><b>In short</b><span>Use the data for your own lawful B2B sales and marketing. Don't resell it, spam people or use it to harm anyone.</span></div>
+      <div class="two">
+        <div class="box"><h4>You may</h4><ul class="yes">
+          <li>Use the data to find and contact potential business customers</li>
+          <li>Import it into your CRM and sales tools</li>
+          <li>Share it inside your own company for that purpose</li>
+          <li>Keep records you exported while your plan is active</li>
+        </ul></div>
+        <div class="box"><h4>You may not</h4><ul class="no">
+          <li>Resell, license or publish the data, or build a competing database</li>
+          <li>Send spam or bulk unsolicited messages that break the law</li>
+          <li>Use the data for consumer marketing, credit, employment, insurance or housing decisions</li>
+          <li>Harass, discriminate against or stalk any person</li>
+          <li>Scrape, copy or reverse-engineer the Service</li>
+        </ul></div>
+      </div>
+    </section>
+
+    <section id="privacy"><div class="num">06</div><h2>Privacy &amp; data protection</h2>
+      <div class="short"><b>In short</b><span>Contact data is personal data. When you use it, you must follow the privacy and anti-spam laws that apply to you — and honour opt-outs.</span></div>
+      <p>The contacts in our database are real people, and the data we provide is personal data under laws such as India's Digital Personal Data Protection Act 2023, the EU and UK GDPR, the US CAN-SPAM Act and similar laws elsewhere.</p>
+      <ul>
+        <li>You are responsible for having a lawful basis to contact the people in your lists and for complying with the laws that apply to your outreach.</li>
+        <li>Every marketing message you send must identify you clearly and give the recipient an easy way to opt out.</li>
+        <li>If someone asks you to stop contacting them or to delete their data, you must do so promptly.</li>
+        <li>If someone asks us to remove their data, we'll remove it from our database and may ask you to remove it from records you've exported.</li>
+        <li>We protect data with appropriate technical and organisational security measures.</li>
+      </ul>
+      <p>How we handle your own account information (for example your name, email and billing details) is described in our Privacy Policy. Questions about privacy can be sent to sales@redmarten.com.</p>
+    </section>
+
+    <section id="accuracy"><div class="num">07</div><h2>Data accuracy</h2>
+      <div class="short"><b>In short</b><span>We verify data before delivery, but people change jobs and emails every day — so no data provider can promise 100% accuracy.</span></div>
+      <p>We work hard to keep our data accurate and verify emails and phone numbers before delivery. However, business contact information changes constantly. We therefore cannot guarantee that every record is complete, current or error-free, or that any contact will result in a sale.</p>
+      <p>If you find records that are clearly wrong, let us know — we'll review them and, where appropriate, correct or replace them.</p>
+    </section>
+
+    <section id="ip"><div class="num">08</div><h2>Ownership</h2>
+      <div class="short"><b>In short</b><span>We own the Service and the database. You get a licence to use the data you receive under these Terms.</span></div>
+      <p>The Service, our database, software, design, logo and brand belong to us or our licensors. We grant you a limited, non-exclusive, non-transferable licence to use the data you receive, only as allowed in section 5 and only for as long as your plan permits.</p>
+      <p>Any data or content you upload (for example your own customer lists) remains yours. You give us permission to process it only so we can provide the Service to you.</p>
+    </section>
+
+    <section id="cancel"><div class="num">09</div><h2>Cancellations &amp; refunds</h2>
+      <div class="short"><b>In short</b><span>Because data is delivered digitally and can't be "returned", payments are generally non-refundable — but talk to us if something has gone wrong.</span></div>
+      <ul>
+        <li>Once data has been delivered or made available to you, payments are non-refundable, except where the law requires otherwise or we agree in writing.</li>
+        <li>If we can't deliver what you paid for, we'll fix the problem or offer a fair refund or credit.</li>
+        <li>To cancel or discuss a billing issue, email sales@redmarten.com.</li>
+      </ul>
+    </section>
+
+    <section id="end"><div class="num">10</div><h2>Suspension &amp; termination</h2>
+      <div class="short"><b>In short</b><span>Either side can end the agreement. We may suspend accounts that break these Terms.</span></div>
+      <p>You can stop using the Service at any time. We may suspend or end your access if you seriously or repeatedly break these Terms, don't pay, or use the Service in a way that could harm others or expose us to legal risk. Where reasonable, we'll warn you first and give you a chance to fix the problem.</p>
+      <p>When the agreement ends, your licence to use the data ends too, and you must stop using and delete data that you're no longer permitted to keep. Sections that by their nature should continue (such as ownership, liability and governing law) will survive.</p>
+    </section>
+
+    <section id="liability"><div class="num">11</div><h2>Liability</h2>
+      <div class="short"><b>In short</b><span>We stand behind our Service, but our total responsibility is limited to what you paid us in the last 12 months.</span></div>
+      <p>The Service is provided "as is" and "as available". To the fullest extent the law allows, we do not give warranties beyond those set out in these Terms.</p>
+      <p>We are not liable for indirect or consequential losses, such as lost profits, lost sales or lost opportunities. Our total liability arising from these Terms or the Service is limited to the amount you paid us in the 12 months before the claim.</p>
+      <p>Nothing in these Terms limits liability that cannot be limited by law, such as liability for fraud.</p>
+      <p>You agree to cover our reasonable losses if a third party makes a claim against us because of how you used the data or broke these Terms.</p>
+    </section>
+
+    <section id="changes"><div class="num">12</div><h2>Changes to these terms</h2>
+      <div class="short"><b>In short</b><span>We may update these Terms. If a change is important, we'll tell you before it applies.</span></div>
+      <p>We may update these Terms from time to time — for example to reflect new features or changes in the law. We'll update the "Last updated" date above, and for significant changes we'll notify you by email at least 14 days before they take effect. If you keep using the Service after that, you accept the updated Terms.</p>
+    </section>
+
+    <section id="law"><div class="num">13</div><h2>Governing law</h2>
+      <div class="short"><b>In short</b><span>These Terms are governed by the laws of India. We'll always try to resolve disagreements by talking first.</span></div>
+      <p>These Terms are governed by the laws of India. If a dispute arises, we'll first try to resolve it informally by email. If that doesn't work within 30 days, the courts at [city], India will have exclusive jurisdiction.</p>
+      <p>If any part of these Terms is found to be unenforceable, the rest will remain in effect. Our not enforcing a right straight away doesn't mean we give it up.</p>
+    </section>
+
+    <section id="contact"><div class="num">14</div><h2>Contact us</h2>
+      <div class="short"><b>In short</b><span>Questions, requests or complaints — one email address reaches us.</span></div>
+      <p>We read every message and aim to reply within two business days.</p>
+      <div class="contact-card">
+        <div><span class="micro" style="color:var(--muted)">Email</span><br/><a class="big" href="mailto:sales@redmarten.com">sales@redmarten.com</a></div>
+        <a class="btn btn-red" href="mailto:sales@redmarten.com?subject=Question%20about%20the%20Terms" style="margin-left:auto">Ask a question →</a>
+      </div>
+    </section>
+
+  </article>
+</div>
+
+<footer>
+  <span>© 2026 The Tentact · Sales data for people who sell</span>
+  <div class="links"><a href="index.html">Home</a><a href="index.html#pricing">Pricing</a><a href="terms.html">Terms</a><a href="terms.html#privacy">Privacy</a><a href="mailto:sales@redmarten.com">Contact</a></div>
+</footer>
+<a class="top-btn" id="topBtn" href="#" aria-label="Back to top">↑</a>
+
+<script>
+(() => {
+  const secs = [...document.querySelectorAll('#terms section')];
+  const toc = document.getElementById('toc');
+  secs.forEach(s => { const li = document.createElement('li'); li.innerHTML = `<a href="#${s.id}">${s.querySelector('h2').textContent}</a>`; toc.appendChild(li); });
+  const links = [...toc.querySelectorAll('a')];
+  const prog = document.getElementById('progress'), topBtn = document.getElementById('topBtn');
+  const onScroll = () => {
+    const h = document.documentElement.scrollHeight - innerHeight;
+    prog.style.transform = `scaleX(${h > 0 ? scrollY / h : 0})`;
+    topBtn.classList.toggle('on', scrollY > 600);
+    let cur = secs[0].id;
+    for (const s of secs) if (s.getBoundingClientRect().top < 140) cur = s.id;
+    links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + cur));
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  topBtn.onclick = e => { e.preventDefault(); scrollTo({ top: 0, behavior: 'smooth' }); };
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .15 });
+  document.querySelectorAll('.rv, #terms section').forEach((el, i) => { el.classList.add('rv'); el.style.transitionDelay = (el.classList.contains('card') ? i * 70 : 0) + 'ms'; io.observe(el); });
+})();
+</script>
+</body>
+</html>
